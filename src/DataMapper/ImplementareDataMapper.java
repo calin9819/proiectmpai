@@ -15,7 +15,7 @@ public class ImplementareDataMapper implements DeviceDataMapper {
 	private Device[] getDeviceuri() throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader("resources/Solicitari.csv"));  
 		String linie = "";
-		String delimitator = "22,";
+		String delimitator = ",";
 		
 		Device[] deviceuri = new Device[10000];
 		int i = 0;
